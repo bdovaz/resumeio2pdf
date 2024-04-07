@@ -17,7 +17,7 @@ docker build -t resumeio2pdf .
 Run image:
 
 ```bash
-docker run -v ./pdfs:/pdfs -e SecureID={YOUR_SECURE_ID} -e FilePath=/pdfs/resumeio.pdf resumeio2pdf
+docker run --rm -v ./pdfs:/pdfs -e SecureID={YOUR_SECURE_ID} -e FilePath=/pdfs/resumeio.pdf resumeio2pdf
 ```
 
 Run image (docker-compose):
